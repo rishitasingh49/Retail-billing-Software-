@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Café Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #060606;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #8B4513;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+        .cafe-section {
+            padding: 20px;
+            border-bottom: 2px solid #8B4513;
+            text-align: center;
+        }
+        .cafe-box {
+            
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #c2ad88;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .cafe-image {
+            width: 52%;
+            border-radius: 20px;
+        }
+        .about-cafe {
+            width: 45%;
+            text-align: center;
+            font-size: 20px;
+        }
+        .menu-box {
+            background-color: #c2ad88;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px 0;
+        }
+        .menu-item {
+            display: inline-block;
+            background-color: #9b8c60;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .menu-item img {
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+        }
+        .more-button {
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .feedback form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .feedback input, .feedback textarea, .feedback button {
+            width: 80%;
+            max-width: 400px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #8B4513;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .feedback button {
+            background-color: #8B4513;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Location</a>
+        <a href="#">Feedback</a>
+    </div>
+
+    <div class="cafe-section">
+        <h1>Welcome to <span style="color: rgb(194, 83, 15); font-weight: bold; font-style: italic;">Wild Beans</span> Cafe</h1>
+        <div class="cafe-box">
+            <img src="cafeimage.png" alt="Cafe Image" class="cafe-image">
+            <div class="about-cafe">
+                <h2>About cafe</h2>
+    <ul style="list-style: none; padding: 0; text-align: left; line-height: 3;">
+        <li><strong>Freshly Brewed Coffee</strong> – Handcrafted coffee from fresh roasted beans.</li>
+        <li><strong>Delicious Snacks & Desserts</strong> – Tasty pastries, sandwiches, and treats.</li>
+        <li><strong>Cozy Ambiance</strong> – A warm, inviting space for relaxation and talks.</li>
+        <li><strong>Friendly Staff</strong> – Our team welcomes you with a smile and great service.</li>
+    </ul>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menu-box">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="garlic.png" alt="Garlic Bread">
+                    <h3>Garlic Bread</h3>
+                    <p>Ingredients: Sour dough bread, garlic, cheese</p>
+                </div>
+                <div class="menu-item">
+                    <img src="pasta.png" alt="Pasta">
+                    <h3>Pasta</h3>
+                    <p>Ingredients: Penne pasta, tomato sauce, parmesan</p>
+                </div>
+                <div class="menu-item">
+                    <img src="cofe.png" alt="Coffee">
+                    <h3>Hot Coffee</h3>
+                    <p>Ingredients: Fresh coffee beans, milk, sugar</p>
+                </div>
+            </div>
+            <button class="more-button">More</button>
+        </div>
+
+        <div class="location">
+            <h2>Location</h2>
+            <p>Branches available in multiple cities. Check out the nearest location!</p>
+        </div>
+
+        <div class="feedback">
+            <h2>Your Feedback</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Feedback" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Sudhakar Devar. All rights reserved.</p>
+    </div>
+</body>
+</html>
